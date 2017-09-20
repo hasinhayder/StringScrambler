@@ -62,12 +62,11 @@ func ShuffleWord(word string) string {
 
 	punctuationMarkFound := false
 	punctuations := "!^+%@*$#-<>:,.';?"
-	if (strings.ContainsAny(word, punctuations)) {
+	if strings.ContainsAny(string(word[len(word)-1]), punctuations) {
 		punctuationMarkFound = true
 	}
 
-	if (punctuationMarkFound) {
-		//just for the sake of simplicity let's consider that punctuation mark is at the end for now
+	if punctuationMarkFound {
 		letters = []rune(word[:len(word)-1])
 	}
 
