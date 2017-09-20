@@ -53,7 +53,7 @@ func ShuffleWord(word string) string {
 		//no need to change words like i, am, you
 		return word
 	}
-	if (len(word) == 4 && word[2] == word[3]) {
+	if (len(word) == 4 && word[1] == word[2]) {
 		//no need to change 4 letter palindromes like book, boob, seen, deed
 		return word
 	}
