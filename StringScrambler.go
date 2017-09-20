@@ -67,6 +67,7 @@ func ShuffleWord(word string) string {
 	}
 
 	if (punctuationMarkFound) {
+		//just for the sake of simplicity let's consider that punctuation mark is at the end for now
 		letters = []rune(word[:len(word)-1])
 	}
 
