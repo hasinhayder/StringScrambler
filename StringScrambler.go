@@ -27,7 +27,7 @@ func main() {
 			//no need to change words like i, am, you
 			fmt.Print(texttokens[i] + " ")
 		} else if (len(texttokens[i]) == 4 && texttokens[i][1] == texttokens[i][2]) {
-			//no need to change 4 letter palindromes like book, boob, seen, deed
+			//no need to change 4 letter words like book, boob, seen, deed
 			fmt.Print(texttokens[i] + " ")
 		} else {
 			deadlockbuster := 0
@@ -54,7 +54,7 @@ func ShuffleWord(word string) string {
 		return word
 	}
 	if (len(word) == 4 && word[1] == word[2]) {
-		//no need to change 4 letter palindromes like book, boob, seen, deed
+		//no need to change 4 letter words like book, boob, seen, deed
 		return word
 	}
 
